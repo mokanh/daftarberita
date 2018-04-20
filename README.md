@@ -1,6 +1,6 @@
 # Daftar Berita 
 
-Daftar Berita is a simple lists of breaking news headline 
+Daftar Berita is a simple lists of breaking news headline [Daftar Berita](http://daftarberita.netlify.com/#/)
 
 ## Why Daftar Berita?
 
@@ -26,3 +26,7 @@ See also the list of [contributors](https://github.com/mokanh/daftarberita/contr
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
+
+## Acknowledgement
+
+* [Netlify](https://www.netlify.com/)
