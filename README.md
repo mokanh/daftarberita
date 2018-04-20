@@ -1,10 +1,10 @@
 # Daftar Berita 
 
-Daftar Berita is a simple list of breaking news headline 
+Daftar Berita is a simple lists of breaking news headline 
 
 ## Why Daftar Berita?
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+In the midst of spreading fakes news in Indonesia lately. *Daftar Berita* seeks to filter by simply taking the news from reliable sources
 
 
 ## Built With
@@ -24,5 +24,5 @@ See also the list of [contributors](https://github.com/mokanh/daftarberita/contr
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
