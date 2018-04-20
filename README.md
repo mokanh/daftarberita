@@ -4,8 +4,10 @@ Daftar Berita is a simple lists of breaking news headline. [Go to site](http://d
 
 ## Why Daftar Berita?
 
-In the midst of spreading fakes news in Indonesia lately. *Daftar Berita* seeks to filter by simply taking the news from reliable sources
+In the midst of spreading fakes news in Indonesia lately, *Daftar Berita* seeks to filter by simply taking the news from reliable sources
 
+  ### * A Progressive Web Apps
+  [!(http://i.imgur.com/dt8AUb6.png)]
 
 ## Built With
 
