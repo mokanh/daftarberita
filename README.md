@@ -6,8 +6,8 @@ Daftar Berita is a simple lists of breaking news headline. [Go to site](http://d
 
 In the midst of spreading fakes news in Indonesia lately, *Daftar Berita* seeks to filter by simply taking the news from reliable sources
 
-  ### * A Progressive Web Apps
-  ![Alt Text](https://imgur.com/a/eL648yF)
+ #### A Progressive Web Apps
+  ![Daftar Berita - PWA](https://gph.is/2HhbsSr)
 
 ## Built With
 
