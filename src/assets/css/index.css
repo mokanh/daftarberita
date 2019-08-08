@@ -1,0 +1,117 @@
+.mt-5 {
+  margin-top: 5em;
+}
+.news .expansion-panel,
+.news .list-wrapper {
+  box-shadow: none;
+}
+.news .list-wrapper {
+  margin: 1.5em 0;
+  background-color: transparent !important;
+}
+.news .expansion-panel__container {
+  /* border: 1px solid rgba(0,0,0,0.12); */
+  margin: 7px 0;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.news-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.news-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.news-source {
+  display: block;
+  font-size: 12px !important;
+  color: #757575;
+}
+.bg-primary {
+  background-color: #fafafa;
+}
+.m-search {
+  display: none !important;
+}
+.wrapper-skeleton {
+  background-color: #fff;
+  padding: 12px 14px !important;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  margin: 3px 0;
+  max-width: 100% !important;
+}
+.main-news .navigation-drawer .link-menu {
+  color: #757575;
+  /* transition: background ease .5s; */
+}
+.main-news .navigation-drawer .link-menu .icon {
+  color: inherit;
+}
+.main-news .navigation-drawer .link-menu:hover,
+.router-link-exact-active.router-link-active {
+  background: #3f51b5;
+  display: block;
+  color: #fff !important;
+  /* transition: background ease .5s; */
+}
+.text-right {
+  text-align: right;
+  margin-right: 1rem;
+}
+.link-next:hover {
+  text-decoration: underline;
+}
+.content-title {
+  position: relative;
+  margin: 1.5rem 0;
+}
+.content-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 2rem;
+  height: 3px;
+  background-color: #3f51b5;
+}
+.expansion-panel__header {
+  padding: 0;
+  padding-right: 1rem;
+}
+.news-img {
+  min-width: 10rem;
+  min-height: 7rem;
+  margin-right: 1rem;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 430px) {
+  .news .expansion-panel__header {
+    padding: 0 !important;
+    padding-right: 1rem !important;
+  }
+  .news-img {
+    min-width: 8rem;
+    min-height: 5.5rem;
+  }
+  .news-title {
+    font-size: 13px;
+  }
+  .news-source {
+    font-size: 11px !important;
+  }
+  .card__text {
+    margin-top: 1rem;
+    padding: 0 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-bottom: 1rem;
+    font-size: 13px;
+  }
+}

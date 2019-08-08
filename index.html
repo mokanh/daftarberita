@@ -1,88 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Daftar Berita</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/favicon-16x16.png">
-    <!--[if IE]><link rel="shortcut icon" href="/static/img/icons/favicon.ico"><![endif]-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/favicon-16x16.png"
+    />
+    <!--[if IE
+      ]><link rel="shortcut icon" href="/static/img/icons/favicon.ico"
+    /><![endif]-->
     <!-- Add to home screen for Android and modern mobile browsers -->
-    <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json">
-    <meta name="theme-color" content="#3f51b5">
+    <link
+      rel="manifest"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json"
+    />
+    <meta name="theme-color" content="#3f51b5" />
 
     <!-- Add to home screen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="animations-pwa">
-    <link rel="apple-touch-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/apple-touch-icon-152x152.png">
-    <link rel="mask-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/safari-pinned-tab.svg" color="#4DBA87">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Daftar Berita" />
+    <link
+      rel="apple-touch-icon"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="mask-icon"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/safari-pinned-tab.svg"
+      color="#4DBA87"
+    />
     <!-- Add to home screen for Windows -->
-    <meta name="msapplication-TileImage" content="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/msapplication-icon-144x144.png">
-    <meta name="msapplication-TileColor" content="#3f51b5">
-    <% for (var chunk of webpack.chunks) {
-        for (var file of chunk.files) {
-          if (file.match(/\.(js|css)$/)) { %>
-    <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>"><% }}} %>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
-    <style scoped>
-      .mt-5{
+    <meta
+      name="msapplication-TileImage"
+      content="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/msapplication-icon-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#3f51b5" />
+    <% for (var chunk of webpack.chunks) { for (var file of chunk.files) { if
+    (file.match(/\.(js|css)$/)) { %>
+    <link
+      rel="<%= chunk.initial?'preload':'prefetch' %>"
+      href="<%= htmlWebpackPlugin.files.publicPath + file %>"
+      as="<%= file.match(/\.css$/)?'style':'script' %>"
+    />
+    <% }}} %>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
+      rel="stylesheet"
+    />
+
+    <style>
+      .mt-5 {
         margin-top: 5em;
       }
-      /* .expansion-panel__container{
-        margin-top: 5em !important;
-      } */
       .news .expansion-panel,
-      .news .list-wrapper{
+      .news .list-wrapper {
         box-shadow: none;
       }
-      .news .list-wrapper{
+      .news .list-wrapper {
         margin: 1.5em 0;
         background-color: transparent !important;
       }
-      .news .expansion-panel__container{
+      .news .expansion-panel__container {
         /* border: 1px solid rgba(0,0,0,0.12); */
         margin: 7px 0;
-        box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
       }
-      .news-wrapper{
+      .news-wrapper {
         display: flex;
         align-items: center;
       }
-      .img-news{
-        max-width: 90px;
-        margin-right: 10px;
-      }
-      .news-source{
-        display: block;
-      }
+
       .news-title {
-          font-size: 16px;
-          font-weight: 500;
+        font-size: 16px;
+        font-weight: 500;
       }
-      .news-source{
-        font-size: 12px;
+      .news-source {
+        display: block;
+        font-size: 12px !important;
         color: #757575;
       }
-      .bg-primary{
+      .bg-primary {
         background-color: #fafafa;
       }
-      .m-search{
+      .m-search {
         display: none !important;
       }
-      .wrapper-skeleton{
+      .wrapper-skeleton {
         background-color: #fff;
         padding: 12px 14px !important;
-        box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
         margin: 3px 0;
         max-width: 100% !important;
       }
-      .main-news .navigation-drawer .link-menu{
+      .main-news .navigation-drawer .link-menu {
         color: #757575;
         /* transition: background ease .5s; */
       }
-      .main-news .navigation-drawer .link-menu .icon{
+      .main-news .navigation-drawer .link-menu .icon {
         color: inherit;
       }
       .main-news .navigation-drawer .link-menu:hover,
@@ -92,56 +121,67 @@
         color: #fff !important;
         /* transition: background ease .5s; */
       }
-      
-      @media (max-width : 430px) {
-        .news{
-          padding: 0 15px;
-        }
-        .news .expansion-panel__header{
-          padding: 12px 10px !important;
-        }
-        .news .expansion-panel__body .card__text{
-          padding-top: 0 !important;
-        }
-        .news-title {
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 1.2;
-        }
-        .news-source {
-          font-size: 11px;
-          margin-top: 4px;
-        }
-        .news .header__icon{
-          display: none !important;
-        }
-        .m-search{
-          display: block !important;
-        }
-        .d-search{
-          display: none !important;
-        }
+      .text-right {
+        text-align: right;
+        margin-right: 1rem;
       }
-      </style>
+      .link-next:hover {
+        text-decoration: underline;
+      }
+      .content-title {
+        position: relative;
+        margin: 1.5rem 0;
+      }
+      .content-title::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 2rem;
+        height: 3px;
+        background-color: #3f51b5;
+      }
+      .expansion-panel__header {
+        padding: 0 !important;
+        padding-right: 1rem !important;
+      }
+      .news-img {
+        min-width: 10rem;
+        min-height: 7rem;
+        margin-right: 1rem;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
 
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103088264-2"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-103088264-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-103088264-2');
-      </script>
+      gtag("config", "UA-103088264-2");
+    </script>
 
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-5298606964412428",
-          enable_page_level_ads: true
-        });
-      </script>
-
+    <script
+      async
+      src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-5298606964412428",
+        enable_page_level_ads: true
+      });
+    </script>
   </head>
   <body>
     <noscript>
